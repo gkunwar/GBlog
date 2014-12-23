@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Blog</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -8,7 +8,12 @@
 </head>
 <body>
 
-<%= yield %>
+<%= render partial: 'layouts/header' %>
+<div class="container">
+  <%= yield %>
+
+  <%= render partial: 'layouts/footer' %>
+</div>
 
 </body>
 </html>

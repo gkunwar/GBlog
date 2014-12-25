@@ -31,4 +31,12 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
+
+  config.model Article do
+    edit do
+      field :title
+      field :description, :wysihtml5
+      field :published_date
+    end
+  end
 end

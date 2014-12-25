@@ -33,6 +33,12 @@ RailsAdmin.config do |config|
   end
 
   config.model Article do
+    list do
+      field :title
+      field :description
+      field :published_date
+      field :created_at
+    end
     edit do
       field :title
       field :description, :wysihtml5

@@ -5,4 +5,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :articles
+
+  def full_name
+    "#{firstname} #{lastname}"
+  end
 end

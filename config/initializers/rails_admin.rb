@@ -43,6 +43,11 @@ RailsAdmin.config do |config|
       field :title
       field :description, :wysihtml5
       field :published_date
+      field :user do
+        formatted_value do # used in form views
+          value.full_name
+        end
+      end
     end
   end
 end

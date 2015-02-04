@@ -20,7 +20,7 @@
     <img class="img-responsive" src="http://placehold.it/900x300" alt="">
     <hr>
     <p><%= article.description.truncate(200, separator: "") %></p>
-    <a class="btn btn-primary" href="<%= article.id %>">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+    <a class="btn btn-primary" href="<%= article_path(article) %>">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
     <hr>
   <%end%>
